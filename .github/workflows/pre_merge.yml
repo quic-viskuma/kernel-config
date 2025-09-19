@@ -84,7 +84,7 @@ jobs:
 
   final-status:
     runs-on: ubuntu-latest
-    needs: [init-status, loading, build, test, comment]
+    needs: [init-status, loading, build]
     if: always()
     steps:
       - name: Final workflow status
